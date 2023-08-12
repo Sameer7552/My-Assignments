@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Course Cards</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .course-card {
+            max-width: 300px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            padding: 20px;
+            margin: auto;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+
+        .course-image {
+            width: 100%;
+            height: 180px;
+            border-radius: 5px;
+        }
+
+        .course-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .course-description {
+            font-size: 14px;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .instructor-name {
+            font-size: 12px;
+            color: #888;
+            margin-top: 5px;
+        }
+
+        .register-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            background-color: #e4e4e4;
+        }
+
+        .big-container {
+            background-color: rgb(255, 255, 255);
+            padding: 40px;
+        }
+
+        a {
+            display: block;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: #333;
+            border: 2px solid #333;
+            letter-spacing: 2px;
+            text-align: center;
+            position: relative;
+            transition: all .35s;
+            margin: auto;
+            margin-top: 15px;
+            background: rgba(141,200,65,255);
+        }
+
+        a span {
+            position: relative;
+            z-index: 2;
+        }
+
+        a:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: rgba(1,102,183,255);
+            transition: all .35s;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        a:hover:after {
+            width: 100%;
+        }
+        .logo{
+            height: 100px;
+            width: 300px;
+            margin-left: 40%;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big-container">
+        <div><img class="logo" src="./pic/logo.png"></div>
+        <div class="grid-container">
+            <div class="course-card">
+                <img src="./pic/card1.jpg" alt="Course Image 1" class="course-image">
+                <div class="course-title">Software Development</div>
+                <div class="course-description">Learn programming languages and software development methodologies to
+                    create applications and software solutions.</div>
+                <div class="instructor-name">Instructor: John Doe</div>
+                <div class="wrapper">
+                    <a href=https://registrationformbysameer.netlify.app target="_blank"><span>Register</span></a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="./pic/card3.jpg" alt="Course Image 3" class="course-image">
+                <div class="course-title">Cybersecurity</div>
+                <div class="course-description">Learn how to protect computer systems, networks, and data from security
+                    breaches and cyber threats.</div>
+                <div class="instructor-name">Instructor: Bob Johnson</div>
+                <div class="wrapper">
+                    <a href=https://registrationformbysameer.netlify.app target="_blank"><span>Register</span></a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="./pic/card4.jpg" alt="Course Image 4" class="course-image">
+                <div class="course-title">Cloud Computing</div>
+                <div class="course-description">Master cloud platforms like Amazon Web Services (AWS), Microsoft Azure,
+                    or Google Cloud to manage and deploy applications in the cloud.</div>
+                <div class="instructor-name">Instructor: Mary Williams</div>
+                <div class="wrapper">
+                    <a href=https://registrationformbysameer.netlify.app target="_blank"><span>Register</span></a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="./pic/card5.jpg" alt="Course Image 5" class="course-image">
+                <div class="course-title">Artificial Intelligence and Machine Learning</div>
+                <div class="course-description">Understand AI concepts, algorithms, and machine learning techniques to
+                    build intelligent systems and applications.</div>
+                <div class="instructor-name">Instructor: James Brown</div>
+                <div class="wrapper">
+                    <a href=https://registrationformbysameer.netlify.app target="_blank"><span>Register</span></a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="./pic/card6.jpg" alt="Course Image 6" class="course-image">
+                <div class="course-title">Web Development</div>
+                <div class="course-description">Acquire skills in HTML, CSS, JavaScript, and other web technologies to
+                    create interactive and responsive websites.</div>
+                <div class="instructor-name">Instructor: Sarah Adams</div>
+                <div class="wrapper">
+                    <a href=https://registrationformbysameer.netlify.app target="_blank"><span>Register</span></a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="./pic/card7.jpg" alt="Course Image 7" class="course-image">
+                <div class="course-title">Mobile App Development</div>
+                <div class="course-description">Learn how to develop mobile applications for Android or iOS platforms
+                    using programming languages like Java, Kotlin, Swift, or React Native.</div>
+                <div class="instructor-name">Instructor: Michael Lee</div>
+                <div class="wrapper">
+                    <a href=https://registrationformbysameer.netlify.app target="_blank"><span>Register</span></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
